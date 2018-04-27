@@ -5,12 +5,16 @@
     <link rel="apple-touch-icon" href="ED21C6B1-186F-4615-9C67-FAF5E40A2242.png">
     <meta name="apple-mobile-web-app-title" content="Mine BTC">
     <script>
-      if(navigator.standalone) {
+      function go() {
         window.location = "https://coinpot.co/mine/bitcoincore/?ref=9107DFC24145&mode=widget";
+      }
+      if(navigator.standalone) {
+        go();
       }
     </script>
   </head>
   <body>
     <h1>Please add this app to your home screen to use it.</h1>
+    <button type="button" name="go" onclick="go();">I'm using a desktop.</button>
   </body>
 </html>
